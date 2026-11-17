@@ -1,0 +1,7 @@
+{
+  "powershellDirectory": "C:/Program Files/PowerShell/7",
+  "executionBackend": "codex",
+  "codexExecutable": "C:/path/to/codex.exe",
+  "codexExecutableSha256": "REPLACE_WITH_SHA256_OF_CODEX_EXECUTABLE",
+  "codexVersion": "0.166.0"
+}

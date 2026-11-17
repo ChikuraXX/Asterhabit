@@ -1,0 +1,7 @@
+{
+  "windowMilliseconds": 86400000,
+  "modelCallMaximum": 10000,
+  "messageMaximum": 10000,
+  "readMaximum": 10000,
+  "sessionMaximum": 1000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "asterhabit-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm --prefix desktop run build",
+    "dev": "npm --prefix desktop run dev"
+  },
+  "engines": { "node": ">=24.22.1" },
+  "dependencies": { "ws": "8.19.0" }
+}

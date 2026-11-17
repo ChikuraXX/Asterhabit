@@ -1,0 +1,32 @@
+{
+  "description": "模型生成及QQ任务的固定脱敏原因；仅允许这些代码进入消息界面，不展示底层错误原文。",
+  "reasons": {
+    "authentication_source_expired": { "zh-CN": "源登录已过期或即将过期，请先刷新Codex登录", "en": "The source sign-in has expired or is expiring; refresh the Codex sign-in" },
+    "authentication_source_unavailable": { "zh-CN": "源登录不可用，请检查Codex登录", "en": "The source sign-in is unavailable; check the Codex sign-in" },
+    "authentication_account_mismatch": { "zh-CN": "源登录账号或主体不一致，已停止使用该模型登录", "en": "The source account or identity does not match; use of this model sign-in is stopped" },
+    "authentication_sync_conflict": { "zh-CN": "登录信息在同步期间变化，已停止覆盖，请稍后重试", "en": "Sign-in data changed during sync; replacement was stopped. Try again later" },
+    "authentication_sync_failed": { "zh-CN": "登录快照同步失败，已停止使用该模型登录", "en": "Sign-in snapshot synchronization failed; use of this model sign-in is stopped" },
+    "authentication_sync_pending": { "zh-CN": "登录快照等待同步，请稍后重试", "en": "The sign-in snapshot is waiting to synchronize; try again shortly" },
+    "authentication_expired": { "zh-CN": "登录快照已过期，请重新连接现有模型登录", "en": "The sign-in snapshot has expired; reconnect the existing model sign-in" },
+    "model_unavailable": { "zh-CN": "所选模型不可用", "en": "The selected model is unavailable" },
+    "authentication_failed": { "zh-CN": "模型服务身份验证失败", "en": "Model service authentication failed" },
+    "reasoning_unsupported": { "zh-CN": "模型不支持当前推理参数", "en": "The model does not support the reasoning settings" },
+    "rate_limited": { "zh-CN": "模型服务暂时限流", "en": "The model service is rate limited" },
+    "quota_exceeded": { "zh-CN": "可用额度已用尽", "en": "The available quota is exhausted" },
+    "context_exceeded": { "zh-CN": "模型上下文超出限制", "en": "The model context limit was exceeded" },
+    "network_failed": { "zh-CN": "模型服务连接失败", "en": "The model service connection failed" },
+    "runtime_unavailable": { "zh-CN": "本地模型运行组件不可用", "en": "A local model runtime component is unavailable" },
+    "runtime_type_error": { "zh-CN": "本地模型运行时发生类型错误", "en": "A type error occurred in the local model runtime" },
+    "generation_timeout": { "zh-CN": "回复生成超时", "en": "Reply generation timed out" },
+    "empty_response": { "zh-CN": "模型未返回回复正文", "en": "The model returned no reply text" },
+    "incomplete_response": { "zh-CN": "模型回复未完整结束", "en": "The model reply did not complete" },
+    "local_backend_error": { "zh-CN": "本地模型服务执行失败", "en": "The local model service failed" },
+    "generation_failed": { "zh-CN": "回复生成未完成", "en": "Reply generation failed" },
+    "configuration_changed": { "zh-CN": "任务期间配置或来源已变化", "en": "Settings or source data changed during the task" },
+    "permission_denied": { "zh-CN": "当前权限不允许此操作", "en": "Current permissions do not allow this operation" },
+    "paused": { "zh-CN": "任务已暂停", "en": "The task was paused" },
+    "cancelled": { "zh-CN": "任务已停止", "en": "The task was stopped" },
+    "cleanup_required": { "zh-CN": "临时模型会话清理未确认", "en": "Temporary model session cleanup is unconfirmed" },
+    "details_unavailable": { "zh-CN": "旧记录未保留详细原因", "en": "The older record contains no detailed reason" }
+  }
+}

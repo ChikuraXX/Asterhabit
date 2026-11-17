@@ -1,0 +1,17 @@
+state/
+node_modules/
+logs/
+cache/
+tools/
+*.log
+.env
+.env.*
+!.env.example
+
+local-runtime.json
+desktop/node_modules/
+desktop/dist/
+desktop/src-tauri/target/
+desktop/src-tauri/gen/
+output/
+.playwright-cli/

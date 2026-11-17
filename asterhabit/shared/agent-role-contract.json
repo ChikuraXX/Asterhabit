@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "maxFileBytes": 262144,
+  "fields": [
+    "name",
+    "nickname",
+    "persona",
+    "personality",
+    "expressionStyle",
+    "replyLanguage",
+    "contentBoundaries"
+  ],
+  "requiredFields": ["name"],
+  "limits": {
+    "name": 60,
+    "nickname": 60,
+    "persona": 16000,
+    "personality": 8000,
+    "expressionStyle": 4000,
+    "replyLanguage": 1000,
+    "contentBoundaries": 8000
+  }
+}
