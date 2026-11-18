@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {spawnSync} from 'node:child_process';
 
-// Graphify 环境随 AgentDot 工作区定位，避免依赖开发机的全局包。
+// Graphify 环境随 Asterhabit 工作区定位，避免依赖开发机的全局包。
 const DEFAULT_PYTHON = fileURLToPath(new URL(process.platform === 'win32' ? '../../graphify/.venv/Scripts/python.exe' : '../../graphify/.venv/bin/python', import.meta.url));
 const BRIDGE=fileURLToPath(new URL('./character_graphify_bridge.py',import.meta.url));
 const MAX_INPUT_BYTES=1024*1024,MAX_GRAPH_BYTES=64*1024*1024;

@@ -6,8 +6,12 @@ import {assertApplicationProtocol} from '../companion/application-migration.mjs'
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 assertApplicationProtocol(path.join(root,'state'));
-const executable=path.join(root,'desktop','src-tauri','target','release','letta-companion-desktop'+(process.platform==='win32'?'.exe':''));
-if(!existsSync(executable))throw new Error('尚未生成桌面应用，请先运行 node scripts/desktop-build.mjs');
+const releaseDirectory=path.join(root,'desktop','src-tauri','target','release');
+const extension=process.platform==='win32'?'.exe':'';
+// 重新构建前允许继续使用原有发行文件。
+const executable=['asterhabit-desktop','letta-companion-desktop']
+  .map(name=>path.join(releaseDirectory,name+extension)).find(candidate=>existsSync(candidate));
+if(!executable)throw new Error('尚未生成桌面应用，请先运行 node scripts/desktop-build.mjs');
 const environment={...process.env,COMPANION_ROOT:root,COMPANION_NODE:process.execPath};
 // 普通启动不继承验收浏览器参数；发行程序也没有 desktop-testing feature。
 delete environment.WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS;

@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 import { spawn, spawnSync } from 'node:child_process';
 
 const INDEX_VERSION = 1;
-// Graphify 环境随 AgentDot 工作区定位，避免依赖开发机的全局包。
+// Graphify 环境随 Asterhabit 工作区定位，避免依赖开发机的全局包。
 const DEFAULT_PYTHON = fileURLToPath(new URL(process.platform === 'win32' ? '../../graphify/.venv/Scripts/python.exe' : '../../graphify/.venv/bin/python', import.meta.url));
 const DEFAULT_TIMEOUT_MS = 20_000;
 const MAX_OUTPUT_BYTES = 1024 * 1024;
