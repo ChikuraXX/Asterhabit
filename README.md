@@ -2,6 +2,8 @@
 
 Asterhabit 是使用 Codex 执行后端的多 Agent 伙伴应用，包含 Vue/Tauri 桌面、Node 业务后端、SQLite 记忆和 Graphify 关联索引，支持官方 QQBot、OneBot 和 B站只读观察。
 
+**开发状态：项目目前处于初期开发阶段。** 功能、接口和配置方式仍可能调整。
+
 本仓库仅保留运行源码、启动和构建脚本、依赖锁文件及许可证。私人记忆、角色运行状态、登录凭据、本机运行配置、依赖安装目录、构建产物、日志、历史验收资料及 SnowLuma 上游副本均不入库；本地文件仍保留。
 
 ## 环境与依赖
@@ -30,4 +32,13 @@ node asterhabit/scripts/desktop-build.mjs
 
 启动脚本使用当前工作区的已构建桌面程序。已有旧数据需要迁移时，应先停止应用和后台，再按原部署流程使用 `asterhabit/scripts/migrate-application.mjs`；不要将空数据目录当作旧数据迁移。
 
-第三方来源和许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。OneBot 的 SnowLuma 实例需要单独安装配置。
+OneBot 的 SnowLuma 实例需要单独安装配置。
+
+## 许可证
+
+项目自有代码采用双许可证，可任选其一：
+
+- [GNU Lesser General Public License v3.0（LGPL-3.0-only）](LICENSE-LGPL-3.0.txt)
+- [GNU General Public License v3.0（GPL-3.0-only）](LICENSE-GPL-3.0.txt)
+
+第三方代码及依赖沿用各自的许可证。来源与许可说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
