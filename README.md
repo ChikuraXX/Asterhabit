@@ -36,9 +36,6 @@ OneBot 的 SnowLuma 实例需要单独安装配置。
 
 ## 许可证
 
-项目自有代码采用双许可证，可任选其一：
-
-- [GNU Lesser General Public License v3.0（LGPL-3.0-only）](LICENSE-LGPL-3.0.txt)
-- [GNU General Public License v3.0（GPL-3.0-only）](LICENSE-GPL-3.0.txt)
+项目自有代码仅按 [GNU Lesser General Public License v3.0（LGPL-3.0-only）](LICENSE) 授权。LGPL 第 3 版纳入了 [GPL 第 3 版条款](asterhabit/licenses/GPL-3.0.txt)，该文件作为 LGPL 的配套文本提供。
 
 第三方代码及依赖沿用各自的许可证。来源与许可说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
