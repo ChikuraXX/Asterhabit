@@ -1,4 +1,4 @@
-# 星伴(Asterhabit)
+# 星伴 (Asterhabit)
 
 Asterhabit 是使用 Codex 执行后端的多 Agent 伙伴应用，包含 Vue/Tauri 桌面、Node 业务后端、SQLite 记忆和 Graphify 关联索引，支持官方 QQBot、OneBot 和 B站只读观察。
 
